@@ -1,0 +1,9 @@
+node_modules/
+.DS_store
+dist/
+.sass-cache/
+package-lock.json
+lib/node_modules
+css/
+lib/.sass-cache
+app/values/fb-creds.js
