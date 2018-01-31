@@ -1,25 +1,25 @@
 "use strict";
 
 
-angular.module("user-notes", ["ngRoute"])
+angular.module("UserNotes", ["ngRoute"])
     .constant("FBUrl", "https://ej-to-do.firebaseio.com/")
-    .config( ($routeProivder) => {
-        $routeProivder
+    .config( ($routeProvider) => {
+        $routeProvider
         .when("/login", {
             templateUrl: "partials/login.html",
             controller: "LoginCtrl"
         })
         .when("/register", {
             templateUrl: "partials/register.html",
-            controller: "RegisterCtrl.js"
+            controller: "RegisterCtrl"
         })
         .when("/newnote", {
             templateUrl: "partials/newnote.html",
-            controller: "NewNoteCtrl.js"
+            controller: "NewNoteCtrl"
         })
         .when("/notelist/:id", {
             templateUrl: "partials/notelist.html",
-            controller: "NoteListCtrl.js"
+            controller: "NoteListCtrl"
         })
         .otherwise("/login");
     })
@@ -31,3 +31,4 @@ angular.module("user-notes", ["ngRoute"])
         };
         firebase.initializeApp(authConfig);
     });
+

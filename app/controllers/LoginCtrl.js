@@ -1,5 +1,7 @@
 "use strict";
 
-angular.module("user-notes").controller("LoginCtrl", function ($scope) {
+angular.module("UserNotes").controller("LoginCtrl", function ($scope) {
+
+
 
 });

@@ -1,5 +1,5 @@
 "use strict";
 
-angular.module("user-notes").controller("NewNoteCtrl", function ($scope) {
+angular.module("UserNotes").controller("NewNoteCtrl", function ($scope) {
 
 });
